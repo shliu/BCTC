@@ -1,0 +1,135 @@
+Script started on Wed 31 Mar 2010 11:08:08 PM EDT
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ exitcat pgm4.pl
+#!/user/local/bin/perl
+
+# pgm4.pl - Steven Liu
+# cit145-j0e1
+# due April, 1, 2010
+
+# This program uses the quadratic equation to solve second-order polynomials
+# Additionally, input will be parsed to remove spaces
+# And there will be certain input checking
+
+print "\nInput values for the coefficients a, b, and c separated with spaces: ";
+$input = <>;
+chomp ($input);
+($a, $b, $c) = split (' ', $input);
+
+print "\n";
+if ($a == 0)
+{
+    print "The coefficient for 'a' cannot be zero\!\n";
+}
+elsif (($b**2 - 4 * $a * $c) < 0)
+{
+    print "Cannot take square root of negative numbers\!\n";
+}
+else
+{
+    $x1 = (-$b + sqrt($b**2 - 4 * $a * $c)) / (2 * $a);
+    $x2 = (-$b - sqrt($b**2 - 4 * $a * $c)) / (2 * $a);
+
+    print "The possible values for x are:\n";
+    print "$x1\n";
+    if ($x1 != $x2)
+    {
+        print "$x2\n";
+    }
+}
+print "\n";
+
+
+exit;
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 2 5 1
+
+The possible values for x are:
+-0.219223593595585
+-2.28077640640442
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 2 4 2
+
+The possible values for x are:
+-1
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 5.5 8 2.2
+
+The possible values for x are:
+-0.368210588033973
+-1.08633486651148
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: -2 5 -3
+
+The possible values for x are:
+1
+1.5
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 1 2 3
+
+Cannot take square root of negative numbers!
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 0 5 10
+
+The coefficient for 'a' cannot be zero!
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 5 10 0
+
+The possible values for x are:
+0
+-2
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 10 0 5
+
+Cannot take square root of negative numbers!
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces:      0 6 7
+
+The coefficient for 'a' cannot be zero!
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 5      2 1
+
+Cannot take square root of negative numbers!
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces: 3 5      4
+
+Cannot take square root of negative numbers!
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces:   3  6  3
+
+The possible values for x are:
+-1
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm4.pl
+
+Input values for the coefficients a, b, and c separated with spaces:     2     8     8
+
+The possible values for x are:
+-2
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ exit
+exit
+
+Script done on Wed 31 Mar 2010 11:10:14 PM EDT

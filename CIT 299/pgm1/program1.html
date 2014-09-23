@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Fuel Efficiency Calculator</title>
+		<script type="text/javascript" src="javascript.js"></script>
+		<link type="text/css" href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<form class="myform">
+			<table>
+				<tbody>
+					<tr>
+						<td>Distance: </td>
+						<td><input type="text" name="distance"></td>
+					</tr>
+					<tr>
+						<td>Fuel Volume: </td>
+						<td><input type="text" name="fuel_volume"></td>
+					</tr>
+					<tr>
+						<td>Fuel Efficiency: </td>
+						<td><input type="text" name="fuel_efficiency"></td>
+					</tr>
+					<tr>
+						<td>Want diesel?: </td>
+						<td><input type="checkbox" name="wants_diesel"></td>
+					</tr>
+					<tr>
+						<td colspan="2">Units:</td>
+					</tr>
+					<tr>
+						<td>English</td>
+						<td><input type="radio" name="unit" value=1 checked></td>
+					</tr>
+					<tr>
+						<td>Metric</td>
+						<td><input type="radio" name="unit" value=2></td>
+					</tr>
+					<tr>
+						<td>Imperial</td>
+						<td><input type="radio" name="unit" value=3></td>
+					</tr>
+					<tr>
+						<td>Missing data:</td>
+						<td>
+							<select name="missing_data">
+								<option value="distance">Distance</option>
+								<option value="fuel_volume">Fuel Volume</option>
+								<option value="fuel_efficiency" selected>Fuel Efficiency</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="button" value="Calculate!" onClick="myFunction(this.form);"></td>
+					</tr>
+					<tr>
+						<td>Fuel Cost: </td>
+						<td><input type="text" name="final_cost"></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>

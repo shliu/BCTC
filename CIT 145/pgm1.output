@@ -1,0 +1,14 @@
+Script started on Thu 04 Feb 2010 06:43:51 PM EST
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ cat pgm1.pl
+#!/usr/local/bin/perl
+#
+#pgml.pl - Steven Liu
+#
+
+print "Hello\n";
+exit;
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm1.pl
+Hello
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ exit
+
+Script done on Thu 04 Feb 2010 06:44:07 PM EST

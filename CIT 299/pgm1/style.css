@@ -1,0 +1,13 @@
+table{
+	background-color: NavajoWhite;
+	border-style: solid;
+	position: absolute;				
+	top: 100px;
+	left: 70px;
+	padding: 10px;
+	z-index: 1;
+	}
+	
+td, input {
+	text-align:right;
+	}

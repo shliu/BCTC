@@ -1,0 +1,45 @@
+.hidden {
+	position:absolute;
+	background-color:white;
+	border-style:solid;
+	border-color:red;
+	z-index:1;
+	display:none;
+	}
+	
+	
+
+table {
+	border-style:solid;
+	background-color: #599;
+	padding:10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	}
+
+	
+table div {
+	border-style: solid;
+	border-width: 2px;
+	background-color: #FFDFB0; /*navajo-white*/
+	width:58px;
+	height:58px;
+	text-align: center;
+	border-radius: 45px;
+	-moz-border-radius:45px;
+	}
+
+	
+table td {
+	width: 60px;
+	height:60px;
+	padding: 0px;
+	background-color: #7bb;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	}
+	
+.transparency {
+	opacity:0.7;
+	filter:alpha(opacity=70)
+	}

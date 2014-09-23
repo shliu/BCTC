@@ -1,0 +1,149 @@
+Script started on Sat 27 Feb 2010 12:02:13 AM EST
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ cat pgm2.pl
+#!/user/local/bin/perl
+#
+#pgm2.pl - Steven Liu
+#
+#cit145-j0e1
+#due March 4, 2010
+#
+#This simple program prompts user for two values and does some calculations using these two values
+#It will then output the results on the screen
+
+print "pgm2.pl\n\n";
+
+print "Input value 1: ";
+$value1 = <>;
+chomp($value1);
+
+print "Input value 2: ";
+$value2 = <>;
+chomp($value2);
+print "\n";
+
+print "The two inputted values were $value1 and $value2\n\n";
+
+$output = $value1 + $value2;
+print "The sum of $value1 and $value2 is $output\n\n";
+
+$output = $value1 - $value2;
+print "The difference of $value1 and $value2 is $output\n\n";
+
+$output = $value1 * $value2;
+print "The product of $value1 and $value2 is $output\n\n";
+
+$output = $value1 / $value2;
+print "The division of $value1 and $value2 is $output\n\n";
+
+$output = $value1 ** $value2;
+print "$value1 raised to the $value2 power is $output\n\n";
+
+$output = $value1 % $value2;
+print "$value1 mod $value2 is $output\n\n";
+
+exit;
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm2.pl
+pgm2.pl
+
+Input value 1: 10
+Input value 2: 20
+
+The two inputted values were 10 and 20
+
+The sum of 10 and 20 is 30
+
+The difference of 10 and 20 is -10
+
+The product of 10 and 20 is 200
+
+The division of 10 and 20 is 0.5
+
+10 raised to the 20 power is 1e+20
+
+10 mod 20 is 10
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm2.pl
+pgm2.pl
+
+Input value 1: 100
+Input value 2: 50
+
+The two inputted values were 100 and 50
+
+The sum of 100 and 50 is 150
+
+The difference of 100 and 50 is 50
+
+The product of 100 and 50 is 5000
+
+The division of 100 and 50 is 2
+
+100 raised to the 50 power is 1e+100
+
+100 mod 50 is 0
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm2.pl
+pgm2.pl
+
+Input value 1: 123
+Input value 2: 456
+
+The two inputted values were 123 and 456
+
+The sum of 123 and 456 is 579
+
+The difference of 123 and 456 is -333
+
+The product of 123 and 456 is 56088
+
+The division of 123 and 456 is 0.269736842105263
+
+123 raised to the 456 power is inf
+
+123 mod 456 is 123
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm2.pl
+pgm2.pl
+
+Input value 1: 999
+Input value 2: 1
+
+The two inputted values were 999 and 1
+
+The sum of 999 and 1 is 1000
+
+The difference of 999 and 1 is 998
+
+The product of 999 and 1 is 999
+
+The division of 999 and 1 is 999
+
+999 raised to the 1 power is 999
+
+999 mod 1 is 0
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm2.pl
+pgm2.pl
+
+Input value 1: 12345
+Input value 2: 54321
+
+The two inputted values were 12345 and 54321
+
+The sum of 12345 and 54321 is 66666
+
+The difference of 12345 and 54321 is -41976
+
+The product of 12345 and 54321 is 670592745
+
+The division of 12345 and 54321 is 0.227260175622687
+
+12345 raised to the 54321 power is inf
+
+12345 mod 54321 is 12345
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ exit
+exit
+
+Script done on Sat 27 Feb 2010 12:03:05 AM EST

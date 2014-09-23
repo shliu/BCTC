@@ -1,0 +1,10 @@
+form {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 200px;
+	height: auto;
+	border-style: solid;
+	background-color: lightblue;
+	padding: 20px;
+	}

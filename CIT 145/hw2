@@ -1,0 +1,39 @@
+Script started on Thu 21 Jan 2010 07:28:07 PM EST
+]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ echo steven liu
+steven liu
+]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ ls
+[00m[00mhomework2[00m  [01;34mMaildir[00m  [01;34mtest[00m  [01;34mwww[00m  [00mxampplite-win32-1.7.2.exe[00m
+[m]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ ls -a
+[00m[01;34m.[00m  [01;34m..[00m  [00m.bash_history[00m  [00m.bash_logout[00m  [00m.bash_profile[00m  [00m.bashrc[00m  [00mhomework2[00m  [01;34mMaildir[00m  [01;34mtest[00m  [01;34m.tmp[00m  [01;34m.usermin[00m  [01;34mwww[00m  [00mxampplite-win32-1.7.2.exe[00m
+[m]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ ls -l
+[00mtotal 26378
+-rw-r--r-- 1 sliu0003 student        0 2010-01-21 19:28 [00mhomework2[00m
+drwx------ 9 sliu0003 student      232 2009-08-11 20:27 [01;34mMaildir[00m
+drwxr-xr-x 2 sliu0003 student       48 2009-09-23 18:15 [01;34mtest[00m
+drwx--x--x 3 sliu0003 student      136 2010-01-20 19:23 [01;34mwww[00m
+-rw-r--r-- 1 sliu0003 student 26983301 2009-11-30 17:07 [00mxampplite-win32-1.7.2.exe[00m
+[m]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ pwd
+/home/sliu0003
+]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ cd /usr/local
+]0;sliu0003@district.bluegrass.kctcs.edu: /usr/localsliu0003@district:/usr/local$ pwd
+/usr/local
+]0;sliu0003@district.bluegrass.kctcs.edu: /usr/localsliu0003@district:/usr/local$ ls
+[00m[01;34mbin[00m  [01;34metc[00m  [01;34mgames[00m  [01;34minclude[00m  [01;34mlib[00m  [01;36mman[00m  [01;34msbin[00m  [01;34mscripts[00m  [01;34mshare[00m  [01;34msrc[00m  [01;34mssl[00m
+[m]0;sliu0003@district.bluegrass.kctcs.edu: /usr/localsliu0003@district:/usr/local$ cd src
+]0;sliu0003@district.bluegrass.kctcs.edu: /usr/local/srcsliu0003@district:/usr/local/src$ ls
+[00m[m]0;sliu0003@district.bluegrass.kctcs.edu: /usr/local/srcsliu0003@district:/usr/local/src$ cd ../bin
+]0;sliu0003@district.bluegrass.kctcs.edu: /usr/local/binsliu0003@district:/usr/local/bin$ ls
+[00m[01;32mdbilogstrip[00m  [01;32mdbiprof[00m  [01;32mdbiproxy[00m
+[m]0;sliu0003@district.bluegrass.kctcs.edu: /usr/local/binsliu0003@district:/usr/local/bin$ pwd
+/usr/local/bin
+]0;sliu0003@district.bluegrass.kctcs.edu: /usr/local/binsliu0003@district:/usr/local/bin$ cd
+]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ clear
+[H[2J]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ pwd
+/home/sliu0003
+]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ ls -l hw2
+[00mls: cannot access hw2: No such file or directory
+[m]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ ls -l homework2
+[00m-rw-r--r-- 1 sliu0003 student 0 2010-01-21 19:28 [00mhomework2[00m
+[m]0;sliu0003@district.bluegrass.kctcs.edu: ~sliu0003@district:~$ exit
+
+Script done on Thu 21 Jan 2010 07:41:09 PM EST

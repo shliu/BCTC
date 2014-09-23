@@ -1,0 +1,221 @@
+Script started on Fri 23 Apr 2010 10:35:31 PM EDT
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ cat pgm6.pl
+#!/user/local/bin/perl
+
+# pgm6.pl - Steven Liu
+# cit145-j0e1
+# due April, 29, 2010
+
+# This is a simple program to find the 
+# Max, Min, and Ave of values entered
+# Max, Min, and Ave must be found using
+# their own individual subroutines
+
+
+print "\nEnter numbers, one per line.\n";
+print "When you are done, enter a blank line.\n";
+
+$input = <>;
+chomp ($input);
+
+$counter = 0;
+while ($input !~ /^$/)
+{
+  $inputarray[$counter] = $input;
+  $counter++;
+
+  $input = <>;
+  chomp ($input);
+}
+print "\n";
+
+
+if ($counter == 0)
+{
+  print "You did not enter any values! Terminating program.\n\n";
+}
+else
+{
+  print "You entered $counter values\n\n";
+  
+  print "The minimum of the numbers you entered is ".&sub_min(@inputarray)."\n\n";
+
+  print "The maximum of the numbers you entered is ".&sub_max(@inputarray)."\n\n";
+
+  print "The average of the numbers you entered is ".&sub_ave(@inputarray)."\n\n";
+}
+
+
+exit;
+
+
+# Finds smallest value in passed array 
+# Repeatedly compares adjacent values from 0-n
+# Keeps the smallest value for return
+sub sub_min
+{
+  my @array = @_;
+  my $minval = $array[0];
+
+  foreach $value (@array)
+  {
+    if ($value < $minval)
+    {
+      $minval = $value; 
+    }
+  }
+  return $minval;
+}
+
+
+# Finds biggest value in passed array 
+# Repeatedly compares adjacent values from 0-n
+# Keeps the largest value for return
+sub sub_max
+{
+  my @array = @_;
+  my $maxval = $array[0];
+
+  foreach $value (@array)
+  {
+    if ($value > $maxval)
+    {
+      $maxval = $value; 
+    }
+  }
+  return $maxval;
+}
+
+
+# Finds average of all values in passed array
+# Totals all values then divides it by number
+# of values in the array
+sub sub_ave
+{
+  my @array = @_;
+  my $totval;
+  foreach $value (@array)
+  {
+    $totval += $value;
+  }
+
+  my $numval = @array;
+  my $aveval = $totval / $numval;
+
+  return $aveval;
+}
+
+
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm6.pl
+
+Enter numbers, one per line.
+When you are done, enter a blank line.
+20
+5
+15
+10
+
+
+You entered 4 values
+
+The minimum of the numbers you entered is 5
+
+The maximum of the numbers you entered is 20
+
+The average of the numbers you entered is 12.5
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm6.pl
+
+Enter numbers, one per line.
+When you are done, enter a blank line.
+99999
+99999.1
+0
+99999
+
+
+You entered 4 values
+
+The minimum of the numbers you entered is 0
+
+The maximum of the numbers you entered is 99999.1
+
+The average of the numbers you entered is 74999.275
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm6.pl
+
+Enter numbers, one per line.
+When you are done, enter a blank line.
+-123
+-123.1
+0
+0
+-0
+-000000.1
+-0.3232
+-.43
+
+
+You entered 8 values
+
+The minimum of the numbers you entered is -123.1
+
+The maximum of the numbers you entered is 0
+
+The average of the numbers you entered is -30.86915
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm6.pl
+
+Enter numbers, one per line.
+When you are done, enter a blank line.
+-111
+0
+0
+0
+0
+111
+
+
+You entered 6 values
+
+The minimum of the numbers you entered is -111
+
+The maximum of the numbers you entered is 111
+
+The average of the numbers you entered is 0
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm6.pl
+
+Enter numbers, one per line.
+When you are done, enter a blank line.
+
+
+You did not enter any values! Terminating program.
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm6.pl
+
+Enter numbers, one per line.
+When you are done, enter a blank line.
+0
+0
+0
+0
+0
+0
+0
+0
+
+
+You entered 8 values
+
+The minimum of the numbers you entered is 0
+
+The maximum of the numbers you entered is 0
+
+The average of the numbers you entered is 0
+
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ exit
+exit
+
+Script done on Fri 23 Apr 2010 10:40:53 PM EDT

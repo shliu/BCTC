@@ -1,0 +1,63 @@
+body {
+	background-color: #FFDEAD;
+}
+
+
+
+
+
+.col_container{
+	float:left;
+	width:800px;
+}
+
+.col_left{
+	float:left;
+	font-family:arial, san-serif;
+	border-style:solid;
+	border-color:red;
+	padding:5px;
+	margin:5px;
+}
+
+
+.col_right{
+	float:right;
+	font-family:courier, serif;
+	border-style:solid;
+	border-color:green;
+	padding:5px;
+	margin:5px;
+}
+
+
+.linkToPage3 {
+	display:block;
+	width:249px;
+	height:196px;
+	background-image:url('fork1.jpg'); 
+}
+
+.linkToPage3:hover {
+	background-image:url('fork2.jpg');
+}
+
+
+
+
+
+.flag {
+	position:absolute; 
+	top:520px; 
+	left:520px; 
+	z-index:-1;
+}
+
+p {
+	width: 800px;
+	font-family: cursive, serif;
+}
+
+h2 {
+	color:red;
+}

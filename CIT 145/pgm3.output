@@ -1,0 +1,60 @@
+Script started on Fri 05 Mar 2010 10:06:24 PM EST
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ cat pgm3.pl
+#!/user/local/bin/perl
+#
+#pgm3.pl - Steven Liu
+#cit145-j0e1
+#due March, 11, 2010
+#This program uses the quadratic equation to solve second-order polynomials
+
+print "Input a value for the coefficient a: ";
+$a = <>;
+chomp ($a);
+print "Input a value for the coefficient b: ";
+$b = <>;
+chomp ($b);
+print "Input a value for the coefficient c: ";
+$c = <>;
+chomp ($c);
+
+print "The possible values for x are:\n";
+
+$x1 = (-$b + sqrt($b**2 - 4 * $a * $c)) / (2 * $a);
+print "     $x1 \n"; 
+$x2 = (-$b - sqrt($b**2 - 4 * $a * $c)) / (2 * $a);
+print "     $x2 \n";
+
+
+exit;
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ pgm3.[K[K[K[K[Kperl pgm3.pl
+Input a value for the coefficient a: 2
+Input a value for the coefficient b: 5
+Input a value for the coefficient c: 1
+The possible values for x are:
+     -0.219223593595585 
+     -2.28077640640442 
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm3.pl
+Input a value for the coefficient a: 2
+Input a value for the coefficient b: 4
+Input a value for the coefficient c: 2
+The possible values for x are:
+     -1 
+     -1 
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm3.pl
+Input a value for the coefficient a: 5.5
+Input a value for the coefficient b: 8
+Input a value for the coefficient c: 2.2
+The possible values for x are:
+     -0.368210588033973 
+     -1.08633486651148 
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ perl pgm3.pl
+Input a value for the coefficient a: -2
+Input a value for the coefficient b: 5
+Input a value for the coefficient c: -3
+The possible values for x are:
+     1 
+     1.5 
+]0;sliu0003@district.bluegrass.kctcs.edu: ~/cit145sliu0003@district:~/cit145$ exit
+exit
+
+Script done on Fri 05 Mar 2010 10:07:06 PM EST
